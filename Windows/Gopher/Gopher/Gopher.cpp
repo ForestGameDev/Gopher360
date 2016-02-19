@@ -82,14 +82,14 @@ void Gopher::loop() {
 		}
 		else if (speed == SPEED_MED)
 		{
-			Beep(260, 210);
-			speed = SPEED_HIGH;
-		}
-		else if (speed == SPEED_HIGH)
-		{
 			Beep(200, 210);
 			speed = SPEED_LOW;
 		}
+		/*else if (speed == SPEED_HIGH)
+		{
+			Beep(200, 210);
+			speed = SPEED_LOW;
+		}*/
 	}
 }
 
@@ -153,7 +153,7 @@ float Gopher::getDelta(short t)
 	if (abs(t) > DEAD_ZONE)
 	{
 		t = sgn(t) * (abs(t) - DEAD_ZONE);
-		delta = speed * t / FPS;
+		delta = speed * (t * 5) / FPS;
 	}
 
 	return delta;

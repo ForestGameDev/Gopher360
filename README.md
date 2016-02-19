@@ -1,3 +1,15 @@
+Why I modified Gopher?
+======
+
+The original Gopher version didn't work well in my laptop, I was not able to make small movements to select options in small menus, etc. I confirmed the problem was with my laptop (Lenovo, Windows 7). Also the 3 speed modes caused me a little confusion to know in which mode I was, so I changed them to only 2.
+
+One of my two speed modes is much slower than the original slow speed. The other is about 20% faster than the original fast mode.
+
+I made a small change in the operation to calculate the movement in order to increase the speed more in relation with the amount of the left stick's movement (multiplied delta by 5), so the slow mode can go from very slow to medium speed, and the fast mode can be slow enough to select big components and fast enough to move between multiple screens.
+
+I use Gopher for my daily office work :), it had helped me a lot for the wrist pain, so thanks Tylemagne and other contributors!
+
+
 About Gopher
 ======
 
